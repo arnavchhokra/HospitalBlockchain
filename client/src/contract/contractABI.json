@@ -1,0 +1,348 @@
+{
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "RecalculatePolicy",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "addressConfirmPolicy",
+            "outputs": [
+                {
+                    "internalType": "enum ShareToSecure.ConfirmPolicy",
+                    "name": "",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "addressToClaimRequest",
+            "outputs": [
+                {
+                    "internalType": "enum ShareToSecure.ClaimRequest",
+                    "name": "",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "addressToCustomerDetails",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "healthScore",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "financialHealthPoints",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "insuranceProvider",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "bank",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "hospital",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "customerDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "insuranceProviderDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "bankDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "hospitalDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "doctorDone",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "name": "addressToInvokeClaim",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "reason",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "hospital",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "ClaimVerificationFromHospital",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "bankDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "financialHealthPoints",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setBank",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "doctorDone",
+                    "type": "bool"
+                }
+            ],
+            "name": "setClaimByDoctor",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                }
+            ],
+            "name": "setClaimByHospital",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                }
+            ],
+            "name": "setClaimRequestConfirm",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                }
+            ],
+            "name": "setClaimRequestReject",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "setConfirmPolicy",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "insuranceProvider",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "bank",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "hospital",
+                    "type": "address"
+                }
+            ],
+            "name": "setDeatils",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "hospitalDone",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "healthScore",
+                    "type": "uint256"
+                }
+            ],
+            "name": "setHospital",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "hospital",
+                    "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "reason",
+                    "type": "string"
+                }
+            ],
+            "name": "setInvokeClaim",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                }
+            ],
+            "name": "setRecalculatePolicy",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "setRejectPolicy",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "customer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "insuranceProviderDone",
+                    "type": "bool"
+                }
+            ],
+            "name": "setinsuranceProvider",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ]
+}
